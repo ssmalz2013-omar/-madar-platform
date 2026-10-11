@@ -1,0 +1,30 @@
+{
+  "name": "madar36",
+  "main": "server/index.js",
+  "compatibility_date": "2026-05-15",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "no_bundle": true,
+  "rules": [
+    {
+      "type": "ESModule",
+      "globs": [
+        "**/*.js",
+        "**/*.mjs"
+      ]
+    }
+  ],
+  "assets": {
+    "directory": "./client",
+    "binding": "ASSETS"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "madar-db",
+      "database_id": "b0de078a-51e8-497e-8bdf-bca503019032",
+      "migrations_dir": "./migrations"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "madar36-deployment",
+  "version": "30.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "postinstall": "tar -xzf madar-release.tar.gz",
+    "build": "tar -xzf madar-release.tar.gz",
+    "deploy": "wrangler deploy"
+  },
+  "dependencies": {
+    "wrangler": "4.92.0"
+  }
+}
